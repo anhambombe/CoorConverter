@@ -49,7 +49,7 @@ st.set_page_config(
 file_path = "C:\\Users\\LENOVO\\Documents\\Eu\\WHO_2022\\DADOS\\PBI\\parceiros campanha.png"
 
 # Open and read the image
-image = Image.open(file_path)
+image = Image.open("parceiros campanha.png")
 
 # Create a Streamlit app
 #st.title("Image Display Example")
