@@ -3,6 +3,7 @@ import pandas as pd
 import io
 import tempfile
 
+
 about_text = """
 ## Sobre o CoordConverter
 
@@ -39,6 +40,38 @@ st.set_page_config(
     initial_sidebar_state="auto",
     menu_items=menu_items
     )
+
+
+hide_st_style ="""
+<style>
+
+
+
+<style>
+
+"""
+#header {visibility: hidden;}
+#footer {visibility: hidden;}
+##MainMenu {visibility: hidden;}
+st.markdown(hide_st_style,unsafe_allow_html=True)
+
+dark_theme = """
+<style>
+body {
+    background-color: #121212;  /* Cor de fundo */
+    color: white;               /* Cor do texto */
+    font-family: Arial, sans-serif;
+}
+.st-bw {
+    background-color: #1E1E1E;  /* Cor de fundo das caixas de chat */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+</style>
+"""
+
+
 
 # Função para converter coordenadas de grau, minuto e segundo para graus decimais
 def coordenadas_para_graus_decimais(graus, minutos, segundos, direcao):
