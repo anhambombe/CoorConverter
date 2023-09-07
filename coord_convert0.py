@@ -3,23 +3,6 @@ import pandas as pd
 import io
 import tempfile
 
-dark_theme = """
-<style>
-body {
-    background-color: #121212;  /* Cor de fundo */
-    color: white;               /* Cor do texto */
-    font-family: Arial, sans-serif;
-}
-.st-bw {
-    background-color: #1E1E1E;  /* Cor de fundo das caixas de chat */
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0;
-}
-</style>
-"""
-
-
 
 about_text = """
 ## Sobre o CoordConverter
@@ -61,13 +44,10 @@ st.set_page_config(
 
 hide_st_style ="""
 <style>
-
 #MainMenu {visibility: hidden;}
 #footer {visibility: hidden;}
 #header {visibility: hidden;}
-
 <style>
-
 """
 st.markdown(hide_st_style,unsafe_allow_html=True)
 
