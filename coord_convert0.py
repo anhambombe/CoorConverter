@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import io
 import tempfile
+from PIL import Image
 
 
 about_text = """
@@ -43,6 +44,16 @@ st.set_page_config(
 
 
 
+
+# Provide the file path to your image
+file_path = "C:\\Users\\LENOVO\\Documents\\Eu\\WHO_2022\\DADOS\\PBI\\parceiros campanha.png"
+
+# Open and read the image
+image = Image.open(file_path)
+
+# Create a Streamlit app
+#st.title("Image Display Example")
+st.image(image, caption=' ', use_column_width=True)
 
 
 
