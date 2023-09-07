@@ -42,14 +42,7 @@ st.set_page_config(
     )
 
 
-hide_st_style ="""
-<style>
-#MainMenu {visibility: hidden;}
-#footer {visibility: hidden;}
-#header {visibility: hidden;}
-<style>
-"""
-st.markdown(hide_st_style,unsafe_allow_html=True)
+
 
 
 
@@ -135,3 +128,13 @@ if uploaded_file:
 
     if st.button("Converter Coordenadas"):
         processar_arquivo(uploaded_file, lat_graus_col, lat_min_col, lat_seg_col, lat_dir_col, lon_graus_col, lon_min_col, lon_seg_col, lon_dir_col)
+
+
+hide_st_style ="""
+<style>
+#MainMenu {visibility: hidden;}
+#footer {visibility: hidden;}
+#header {visibility: hidden;}
+<style>
+"""
+st.markdown(hide_st_style,unsafe_allow_html=True)
