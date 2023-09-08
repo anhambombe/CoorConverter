@@ -149,3 +149,19 @@ header {visibility: hidden;}
 <style>
 """
 st.markdown(hide_st_style,unsafe_allow_html=True)
+
+
+st.sidebar.title("Configurações")
+
+# Botão de informação
+if st.button("ℹ️ Informação"):
+    st.write(about_text)
+
+# Botão de ajuda
+
+# Link de e-mail para obter ajuda
+email = "anhambombe@gmail.com"
+st.markdown(f"❓ Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
+
+if st.button("❓ Ajuda"):
+    st.markdown(f"Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
