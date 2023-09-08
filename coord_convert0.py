@@ -153,7 +153,7 @@ st.markdown(hide_st_style,unsafe_allow_html=True)
 
 #st.sidebar.title("Configurações")
 # Link para as configurações
-st.sidebar.markdown('[![Configurações](https://img.icons8.com/ios-filled/50/000000/settings.png)]')
+st.sidebar.markdown('![Configurações](https://img.icons8.com/ios-filled/50/000000/settings.png)')
 
 
 # Botão de informação
