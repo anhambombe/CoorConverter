@@ -161,7 +161,7 @@ if st.button("ℹ️ Informação"):
 
 # Link de e-mail para obter ajuda
 email = "anhambombe@gmail.com"
-st.markdown(f"❓ Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
+#st.markdown(f"❓ Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
 
 if st.button("❓ Ajuda"):
     st.markdown(f"Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
