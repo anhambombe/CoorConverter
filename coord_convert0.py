@@ -29,13 +29,13 @@ Aproveite o uso do CoordConverter para simplificar suas tarefas de conversão de
 
 menu_items = {
     "About": about_text,
-    "Report a bug": "mailto:anhambombe@gmail.com",  # Use o formato correto para um link de e-mail
+    "Report a bug": "mailto:anhambombee@gmail.com",  # Use o formato correto para um link de e-mail
     "Get help": "https://streamlit.io/community"  # Adicione uma entrada para a página "About" em português
 }
 
 
 st.set_page_config(
-    page_title="CoordConverter",
+    page_title="CooConversor",
     page_icon="❄",
     layout="wide",
     initial_sidebar_state="auto",
@@ -53,7 +53,7 @@ image = Image.open("parceiros campanha.png")
 
 # Create a Streamlit app
 #st.title("Image Display Example")
-st.image(image, caption=' ', use_column_width=True)
+st.image(image,  use_column_width=True)#caption=' ',
 
 
 
@@ -118,7 +118,7 @@ def processar_arquivo(arquivo, lat_graus_col, lat_min_col, lat_seg_col, lat_dir_
 # Configuração da aplicação Streamlit
 st.title("Conversor de Coordenadas para Graus Decimais")
 
-uploaded_file = st.file_uploader("Faça o upload de um arquivo (xlsx, xls, csv ou txt)", type=["xlsx", "xls", "csv", "txt"])
+uploaded_file = st.file_uploader("Faça upload de um arquivo (xlsx, xls, csv ou txt)", type=["xlsx", "xls", "csv", "txt"])
 
 if uploaded_file:
     colunas_disponiveis = list(pd.read_excel(uploaded_file, nrows=1).columns) if uploaded_file.name.endswith(('.xlsx', '.xls')) else list(pd.read_csv(uploaded_file, nrows=1, sep=None, engine='python').columns)
