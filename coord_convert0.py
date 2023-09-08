@@ -157,7 +157,7 @@ st.sidebar.markdown('![Configurações](https://img.icons8.com/ios-filled/50/000
 
 
 # Botão de informação
-if st.sidebar.button("ℹ️ Informação"):
+if st.sidebar.button("ℹ️"):
     st.sidebar.write(about_text)
 
 # Botão de ajuda
