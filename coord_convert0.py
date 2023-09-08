@@ -155,7 +155,7 @@ st.sidebar.title("Configurações")
 
 # Botão de informação
 if st.sidebar.button("ℹ️ Informação"):
-    st.write(about_text)
+    st.sidebar.write(about_text)
 
 # Botão de ajuda
 
@@ -164,4 +164,4 @@ email = "anhambombe@gmail.com"
 #st.markdown(f"❓ Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
 
 if st.sidebar.button("❓ Ajuda"):
-    st.markdown(f"Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
+    st.sidebar.markdown(f"Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
