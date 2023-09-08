@@ -36,7 +36,7 @@ menu_items = {
 
 st.set_page_config(
     page_title="CoordConverter",
-    page_icon="🌌",
+    page_icon="❄",
     layout="wide",
     initial_sidebar_state="auto",
     menu_items=menu_items
@@ -160,7 +160,7 @@ if st.sidebar.button("ℹ️ Informação"):
 # Botão de ajuda
 
 # Link de e-mail para obter ajuda
-email = "anhambombe@gmail.com"
+email = "anhambombee@gmail.com"
 #st.markdown(f"❓ Para obter ajuda, envie um e-mail para [{email}](mailto:{email}) :information_source:")
 
 if st.sidebar.button("❓ Ajuda"):
