@@ -55,7 +55,7 @@ image = Image.open("parceiros campanha.png")
 #st.title("Image Display Example")
 st.image(image,  use_column_width=True)#caption=' ',
 
-
+st.metric("Medida",value=345)
 
 # Função para converter coordenadas de grau, minuto e segundo para graus decimais
 def coordenadas_para_graus_decimais(graus, minutos, segundos, direcao):
